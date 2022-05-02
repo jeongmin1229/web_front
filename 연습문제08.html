@@ -1,6 +1,15 @@
+<!-- <input pattern="속성값"> : 정규식 패턴 지정 -->
+<!-- <input required> : 필수 입력 필드로 지정 -->
 <body>
     <form action="http://ggoreb.com/http/post.jsp" method="POST">
         <input type="text" name = "auth-key", value="1q2w3e4r">
+        <br>
+        <input type="text" name = "user_id"
+        pattern="[A-Za-a]+[A-Za-z0-9]*"
+        required
+        placeholder="영어와 숫자로 아이디를 작성(첫번재 글자는 영어)">
+        <br>
         <input type="submit" value="버튼">
     </form>
 </body>
+
